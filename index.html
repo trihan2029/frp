@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>POLYCET Online Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>POLYCET Online Test</h1>
+
+  <div id="timer">⏰ Time Left: 0:00</div>
+
+  <button id="pauseBtn" onclick="togglePause()">⏸ Pause</button>
+
+  <div id="question-section">
+    <img id="questionImage" class="question-img">
+    <div id="options" class="options"></div>
+  </div>
+
+  <label>
+    <input type="checkbox" id="guessCheckbox"> Mark as Guessed
+  </label>
+
+  <div class="navigation">
+    <button onclick="prevQuestion()">⬅️ Previous</button>
+    <button onclick="nextQuestion()">Next ➡️</button>
+    <button id="submitBtn" onclick="submitTest()">✅ Submit</button>
+  </div>
+
+  <h2>Question Status</h2>
+  <div id="unansweredList"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
